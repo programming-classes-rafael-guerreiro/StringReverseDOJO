@@ -6,20 +6,23 @@
 
 
 public class ReverveString {
-	private String phrase;
+	public final String initialPhrase;
+	public String finalPhrase;
 	
 	//constructor
 	public ReverveString(String value){
-		this.phrase = value;
+		this.initialPhrase = value;
+		this.finalPhrase = value;
 	}
 	
 	//Methods
 	public void reverse(){
-		char temp;
-		String resultado[phrase.lenght];
-		for (int i = 0; i < phrase.length()/2; i++) {
-			temp = phrase.charAt(i);
-			value.charAt(i) = '1';
+		char[] temp = new char[initialPhrase.length()];
+		int phraseLength = initialPhrase.length();
+		for (int i = 0; i < phraseLength/2; i++) {
+			temp[i] = initialPhrase.charAt(phraseLength-i);
+			temp[phraseLength-i] = initialPhrase.charAt(i);
 		}
+		
 	}
 }
