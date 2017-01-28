@@ -14,13 +14,6 @@ public class ReverveString {
 	}
 
 	// Methods
-
-	// [a, b, c, d, e] length = 5 min = 0 max = 4
-	// [a, b, c, d, e]
-	// temp length = 5 [ 0, 0, 0, 0, 0 ]
-	// phraseLength = 5
-	//
-	// for min = 0 max = 5 / 2 = 2
 	public String reverse() {
 		char[] temp = new char[initialPhrase.length()];
 		int phraseLength = initialPhrase.length();
