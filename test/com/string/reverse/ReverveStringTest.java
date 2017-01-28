@@ -29,11 +29,22 @@ public class ReverveStringTest {
 		ReverveString reverser = new ReverveString("a");
 		assertEquals("a", reverser.reverse());
 	}
-	
-//	@Test
-//	public void when_string_has_chinese_character_must_reverse() {
-//		ReverveString reverser = new ReverveString("a");
-//		assertEquals("a", reverser.reverse());
-//	}
 
+	@Test
+	public void when_string_has_deserat_character_in_the_middle_must_reverse() {
+		ReverveString reverser = new ReverveString("ab𐐷dc");
+		assertEquals("cd𐐷ba", reverser.reverse());
+	}
+
+	@Test
+	public void when_string_has_deserat_character_in_the_beginning_must_reverse() {
+		ReverveString reverser = new ReverveString("𐐷dc");
+		assertEquals("cd𐐷", reverser.reverse());
+	}
+
+	@Test
+	public void when_string_has_deserat_character_in_the_end_must_reverse() {
+		ReverveString reverser = new ReverveString("ab𐐷");
+		assertEquals("𐐷ba", reverser.reverse());
+	}
 }
