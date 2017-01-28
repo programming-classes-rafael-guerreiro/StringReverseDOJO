@@ -30,10 +30,10 @@ public class ReverveStringTest {
 		assertEquals("a", reverser.reverse());
 	}
 	
-	@Test
-	public void when_string_has_chinese_character_must_reverse() {
-		ReverveString reverser = new ReverveString("a");
-		assertEquals("a", reverser.reverse());
-	}
+//	@Test
+//	public void when_string_has_chinese_character_must_reverse() {
+//		ReverveString reverser = new ReverveString("a");
+//		assertEquals("a", reverser.reverse());
+//	}
 
 }
